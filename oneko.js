@@ -84,11 +84,12 @@
 
   function init() {
     nekoEl.id = "oneko";
+    nekoEl.onclick = function(){window.open("https://sleepie.dev/oneko", '_blank').focus()}
     nekoEl.ariaHidden = true;
-    nekoEl.style.width = "34px";
-    nekoEl.style.height = "34px";
+    nekoEl.style.width = "32px";
+    nekoEl.style.height = "32px";
     nekoEl.style.position = "fixed";
-    nekoEl.style.imageRendering = "smooth";
+    nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = `${nekoPosX - 16}px`;
     nekoEl.style.top = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = 2147483647;
